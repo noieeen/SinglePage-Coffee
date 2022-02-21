@@ -445,7 +445,90 @@ button {
 
 /* Active link products */
 
+.active-product .products__title{
+  color: var(--title-color);
+}
+
 /*=============== QUALITY ===============*/
+
+.quantity{
+  background-color: #fff
+}
+
+.quantity__content{
+  row-gap: 2.5rem;
+}
+
+.quantity__images{
+  position: relative;
+  justify-self:center;
+}
+
+.quantity__img-big,.quantity__img-small{
+  border-radius:.5rem
+}
+
+.quantity__img-big{
+  width: 280px;
+}
+
+.quantity__img-small{
+  width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transform: translateX(-5rem);
+}
+
+.quantity__title,.quantity__price{
+  font-size: var(--h1-font-size);
+}
+
+.quantity__title{
+  margin: bottom 0.75rem;
+}
+
+.quantity__price{
+  margin-bottom: .25rem;
+}
+
+.quantity__special{
+  display:block;
+  font-size:var(--small-font-size);
+  margin-bottom: .75rem;
+}
+
+.quantity__description{
+  margin-bottom: 2.5rem;
+}
+
+.quantity__buttons{
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.quantity__button{
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+  color: var(--title-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .75rem;
+}
+
+.quantity__button i{
+  font-size: 1.25rem;
+  transition:.4s;
+}
+
+.quantity__button i:hover{
+  transform: translateX(.25rem);
+}
+
+
+
 
 /*=============== LOGOS ===============*/
 

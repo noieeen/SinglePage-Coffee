@@ -144,17 +144,17 @@
                 </h2>
 
                 <ul class="products__filters">
-                    <li class="products__item products__line">
+                    <li class="products__item products__line active-product" data-filter=".delicacies">
                         <h3 class="products__title">New Delicacies</h3>
                         <span class="products__stock">3 products</span>
                     </li>
 
-                    <li class="products__item products__line">
+                    <li class="products__item products__line" data-filter=".coffee">
                         <h3 class="products__title">Hot Coffee</h3>
                         <span class="products__stock">4 products</span>
                     </li>
 
-                    <li class="products__item products__line">
+                    <li class="products__item " data-filter=".cake">
                         <h3 class="products__title">Cakes And Delicacies</h3>
                         <span class="products__stock">4 products</span>
                     </li>
@@ -163,7 +163,7 @@
                 <div class="products__content grid">
                     <!-- Delicacies -->
 
-                    <article class="products__card">
+                    <article class="products__card delicacies">
                         <div class="products__shape">
                             <img src="/assets/img/delicacies1.png" alt="" class="products__img">
                         </div>
@@ -178,7 +178,7 @@
                         </div>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card delicacies">
                         <div class="products__shape">
                             <img src="/assets/img/delicacies3.png" alt="" class="products__img">
                         </div>
@@ -193,7 +193,7 @@
                         </div>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card delicacies">
                         <div class="products__shape">
                             <img src="/assets/img/delicacies3.png" alt="" class="products__img">
                         </div>
@@ -210,7 +210,7 @@
 
 
                     <!-- Coffee -->
-                    <article class="products__card">
+                    <article class="products__card coffee">
                         <div class="products__shape">
                             <img src="/assets/img/coffee1.png" alt="" class="products__img">
                         </div>
@@ -225,7 +225,7 @@
                         </div>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card coffee">
                         <div class="products__shape">
                             <img src="/assets/img/coffee2.png" alt="" class="products__img">
                         </div>
@@ -240,7 +240,7 @@
                         </div>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card coffee">
                         <div class="products__shape">
                             <img src="/assets/img/coffee3.png" alt="" class="products__img">
                         </div>
@@ -255,7 +255,7 @@
                         </div>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card coffee">
                         <div class="products__shape">
                             <img src="/assets/img/coffee4.png" alt="" class="products__img">
                         </div>
@@ -271,7 +271,7 @@
                     </article>
 
                     <!-- Cake  -->
-                    <article class="products__card">
+                    <article class="products__card cake">
                         <div class="products__shape">
                             <img src="/assets/img/cake1.png" alt="" class="products__img">
                         </div>
@@ -286,7 +286,7 @@
                         </div>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card cake">
                         <div class="products__shape">
                             <img src="/assets/img/cake2.png" alt="" class="products__img">
                         </div>
@@ -301,7 +301,7 @@
                         </div>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card cake">
                         <div class="products__shape">
                             <img src="/assets/img/cake3.png" alt="" class="products__img">
                         </div>
@@ -316,7 +316,7 @@
                         </div>
                     </article>
 
-                    <article class="products__card">
+                    <article class="products__card cake">
                         <div class="products__shape">
                             <img src="/assets/img/cake4.png" alt="" class="products__img">
                         </div>
@@ -337,7 +337,41 @@
 
         <!--==================== QUALITY ====================-->
         <section class="quality section" id="premium">
+            <div class="quantity__container container">
+                <h2 class="section__title">
+                    We offer a premium and better quality preparation just for you!
+                </h2>
+                <div class="quantity__content grid">
+                    <div class="quantity__images">
+                        <img src="assets/img/quality1.png" alt="" class="quantity__img-big">
+                        <img src="assets/img/quality2.png" alt="" class="quantity__img-small">
+                    </div>
 
+                    <div class="quantity__data">
+                        <h1 class="quantity__title">
+                            Premium Coffee
+                        </h1>
+                        <h2 class="quantity__price">$94.44</h2>
+                        <span class="quantity__special">Especial Price</span>
+                        <p class="quantity__description">
+                            We are delighted with our coffee. That's why you get the best
+                            premium coffee plus the kettle made of resistant meterials that
+                            you see in the image, for a special price.
+                        </p>
+                        <div class="quantity__buttons">
+                            <button class="button">
+                                Buy Now
+                            </button>
+
+                            <a href="#" class="quantity__button">
+                                See more
+                                <i class="bx bx-right-arrow-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <!--==================== LOGOS ====================-->
