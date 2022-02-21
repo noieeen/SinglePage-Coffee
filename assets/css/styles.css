@@ -439,40 +439,41 @@ button {
   box-shadow: 0 4px 12px hsla(206, 4%, 4%, 0.2);
 }
 
-.products__card:hover .products__img{
-  transform: translateY(-.25rem);
+.products__card:hover .products__img {
+  transform: translateY(-0.25rem);
 }
 
 /* Active link products */
 
-.active-product .products__title{
+.active-product .products__title {
   color: var(--title-color);
 }
 
 /*=============== QUALITY ===============*/
 
-.quantity{
-  background-color: #fff
+.quality {
+  background-color: #fff;
 }
 
-.quantity__content{
+.quality__content {
   row-gap: 2.5rem;
 }
 
-.quantity__images{
+.quality__images {
   position: relative;
-  justify-self:center;
+  justify-self: center;
 }
 
-.quantity__img-big,.quantity__img-small{
-  border-radius:.5rem
+.quality__img-big,
+.quality__img-small {
+  border-radius: 0.5rem;
 }
 
-.quantity__img-big{
+.quality__img-big {
   width: 280px;
 }
 
-.quantity__img-small{
+.quality__img-small {
   width: 100px;
   position: absolute;
   top: 0;
@@ -481,56 +482,77 @@ button {
   transform: translateX(-5rem);
 }
 
-.quantity__title,.quantity__price{
+.quality__title,
+.quality__price {
   font-size: var(--h1-font-size);
 }
 
-.quantity__title{
+.quality__title {
   margin: bottom 0.75rem;
 }
 
-.quantity__price{
-  margin-bottom: .25rem;
+.quality__price {
+  margin-bottom: 0.25rem;
 }
 
-.quantity__special{
-  display:block;
-  font-size:var(--small-font-size);
-  margin-bottom: .75rem;
+.quality__special {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.75rem;
 }
 
-.quantity__description{
+.quality__description {
   margin-bottom: 2.5rem;
 }
 
-.quantity__buttons{
+.quality__buttons {
   display: flex;
   align-items: center;
   column-gap: 2rem;
 }
 
-.quantity__button{
+.quality__button {
   font-size: var(--normal-font-size);
   text-transform: uppercase;
   color: var(--title-color);
   display: inline-flex;
   align-items: center;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
 }
 
-.quantity__button i{
+.quality__button i {
   font-size: 1.25rem;
-  transition:.4s;
+  transition: 0.4s;
 }
 
-.quantity__button i:hover{
-  transform: translateX(.25rem);
+.quality__button i:hover {
+  transform: translateX(0.25rem);
 }
-
-
-
 
 /*=============== LOGOS ===============*/
+.logo {
+  background-color: #fff;
+}
+
+.logo__container {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem 2rem;
+  border-top: 1px solid var(--text-color-light);
+  padding-top: 2.5rem;
+}
+
+.logo__img {
+  width: 80px;
+  mix-blend-mode: luminosity;
+  opacity: .4;
+  transition:.4s
+}
+
+.logo__img:hover{
+  opacity: .8;
+}
 
 /*=============== BLOG ===============*/
 
