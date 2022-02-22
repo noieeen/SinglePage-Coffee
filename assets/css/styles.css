@@ -230,6 +230,9 @@ button {
   mix-blend-mode: difference;
 }
 /* Active link */
+.active-link{
+  color: #fff;
+}
 
 /*=============== HOME ===============*/
 .home {
@@ -610,94 +613,94 @@ button {
   align-items: center;
 }
 
-.blog__footer{
+.blog__footer {
   column-gap: 1.5rem;
 }
 
-.blog__reaction{
-  column-gap: .25rem;
+.blog__reaction {
+  column-gap: 0.25rem;
 }
 
-.blog__reaction i{
+.blog__reaction i {
   font-size: 1.25rem;
 }
 
-.blog__reaction span{
+.blog__reaction span {
   font-size: var(--small-font-size);
 }
 
 /*=============== FOOTER ===============*/
 
-.footer{
+.footer {
   background-color: var(--black-color);
   padding: 4rem 0 2.5rem;
 }
 
-.footer__title{
+.footer__title {
   color: #fff;
   font-size: var(--h1-font-size);
   margin-bottom: 2rem;
 }
 
-.footer__description{
-  margin-bottom: .75rem;
+.footer__description {
+  margin-bottom: 0.75rem;
 }
 
-.footer__newsletter{
+.footer__newsletter {
   display: flex;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
 }
 
-.footer__input{
+.footer__input {
   border: none;
   outline: none;
   padding: 1.25rem 1rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   width: 70%;
   color: var(--text-color);
 }
 
-.footer__button{
-  padding: .75rem;
+.footer__button {
+  padding: 0.75rem;
   font-size: 2rem;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   display: inline-flex;
   background-color: var(--first-color);
 }
 
-.footer__button i{
+.footer__button i {
   transform: rotate(-30deg);
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.footer__button i:hover{
-  transform: rotate(-30deg) translateX(.25rem);
+.footer__button i:hover {
+  transform: rotate(-30deg) translateX(0.25rem);
 }
 
-.footer__content{
+.footer__content {
   row-gap: 2.5rem;
   padding-bottom: 2.5rem;
   border-bottom: 1px solid var(--text-color);
 }
 
-.footer__subtitle{
+.footer__subtitle {
   color: #fff;
   font-size: var(--h2-font-size);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
-.footer__flag{
+.footer__flag {
   width: 1rem;
 }
 
-.footer__group{
+.footer__group {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-top: 1.5rem;
 }
 
-.footer__social{
+.footer__social {
   display: flex;
   justify-content: center;
   column-gap: 1.5rem;
@@ -705,38 +708,63 @@ button {
   margin-bottom: 2rem;
 }
 
-.footer__social-link{
+.footer__social-link {
   color: #fff;
-  transition: .4s;
+  transition: 0.4s;
 }
 
-.footer__social-link:hover{
+.footer__social-link:hover {
   color: var(--first-color);
 }
 
-.footer__copy{
+.footer__copy {
   color: var(--first-color);
   font-size: var(--smaller-font-size);
 }
 
 /*=============== SCROLL BAR ===============*/
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.6rem;
-  background-color: hsl(206,4%,80%);
+  background-color: hsl(206, 4%, 80%);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: hsl(206, 4%, 64%);
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background-color: hsl(206, 4%, 48%);
 }
 
 /*=============== SCROLL UP ===============*/
 
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: #fff;
+  box-shadow: 0 4px 12px hsla(206, 4%, 20%, 0.1);
+  display: inline-flex;
+  padding: 0.35rem;
+  border-radius: 0.15rem;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  z-index: var(--z-tooltip);
+  opacity: 0.9;
+  transition: .4s;
+}
+
+.scrollup:hover {
+  opacity: 1;
+  transform: translateY(-0.25rem);
+}
+
 /* Show Scroll Up*/
+.show-scroll{
+  bottom: 3rem;
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
